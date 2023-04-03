@@ -30,23 +30,23 @@ plusMinus([-4, 3, -9, 0, 4, 1]);
 
 // Method 2
 
-function plusMinus(arr) {
+function positiveNegative(array) {
   let positive = 0,
     negative = 0,
     zero = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > 0) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 0) {
       positive++;
     }
-    if (arr[i] < 0) {
+    if (array[i] < 0) {
       negative++;
     }
-    if (arr[i] == 0) {
+    if (array[i] == 0) {
       zero++;
     }
   }
-  console.log((positive / arr.length).toPrecision(6));
-  console.log((negative / arr.length).toPrecision(6));
-  console.log((zero / arr.length).toPrecision(6));
+  console.log((positive / array.length).toPrecision(6));
+  console.log((negative / array.length).toPrecision(6));
+  console.log((zero / array.length).toPrecision(6));
 }
-plusMinus([-1, -1, 0, 1, 1]);
+positiveNegative([-1, -1, 0, 1, 1]);
