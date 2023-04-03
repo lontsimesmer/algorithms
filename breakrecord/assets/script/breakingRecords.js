@@ -1,7 +1,8 @@
+// Example 1
+
 const scores = [12, 24, 10, 24];
 
 function breakingRecords(scores) {
-  // Write your code here
   let main = 0;
   least = 0;
   mainScore = scores[0];
@@ -21,3 +22,29 @@ function breakingRecords(scores) {
   console.log(main, least);
 }
 breakingRecords(scores);
+
+
+// Example 2
+
+const goals = [24, 10, 24, 12];
+
+function beatingRecords(goals) {
+  let best = 0;
+  worst = 0;
+  bestGoal = goals[0];
+  worstGoal = goals[0];
+  for (let i = 0; i < goals.length; i++) {
+    if (goals[i] > bestGoal) {
+      bestGoal = goals[i];
+      best++;
+      continue;
+    }
+    if (goals[i] < worstGoal) {
+      worstGoal = goals[i];
+      worst++;
+      continue;
+    }
+  }
+  console.log(best, worst);
+}
+beatingRecords(goals);
