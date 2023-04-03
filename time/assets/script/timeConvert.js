@@ -18,7 +18,7 @@ timeConversion(s);
 
 // Example 2
 
-const t = "12:01:00AM";
+const t = "12:00:00AM";
 
 function timeConversion(t) {
   let time = t.slice(0, 2);
