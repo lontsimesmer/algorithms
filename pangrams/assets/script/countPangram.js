@@ -64,3 +64,18 @@ function sortCount(m) {
   console.log("pangram");
 }
 sortCount(m);
+
+// export async function fetchBatchesByStatus(
+//   batch: BatchStatus = 'OPEN'
+// ): Promise<Batch | undefined> {
+//   const batches: Batch[] = await getBatches();
+//   return batches.find(({ status }) => status === batch);
+// }
+
+// export async function getOpenBatchId(): Promise<Batch | undefined> {
+//   const batchStatusWhere: QueryConstraint = where('status', '==', 'OPEN');
+//   const batch: Batch[] = (
+//     await getDocs(query(docRefs.batches, batchStatusWhere))
+//   ).docs.map((res) => parseFirebaseDoc<Batch>(res));
+//   return batch.find(({ status }) => status);
+// }
