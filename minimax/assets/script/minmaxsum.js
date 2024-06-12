@@ -21,7 +21,7 @@ miniMaxSum(arr);
 
 const array = [1, 3, 5, 7, 9];
 
-function miniMaxSum(array) {
+function minMaxiSum(array) {
   let minSum = 0,
     maxSum = 0;
   for (let i = 0; i < 4; i++) {
@@ -33,4 +33,4 @@ function miniMaxSum(array) {
   }
   console.log(`${minSum}, ${maxSum}`);
 }
-miniMaxSum(array);
+minMaxiSum(array);
