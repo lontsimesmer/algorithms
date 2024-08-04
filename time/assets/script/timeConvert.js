@@ -20,7 +20,7 @@ timeConversion(s);
 
 const t = "12:00:00AM";
 
-function timeConversion(t) {
+function timeConvert(t) {
   let time = t.slice(0, 2);
   if (time === "12") {
     if (t.includes("AM")) {
@@ -31,4 +31,4 @@ function timeConversion(t) {
   }
   console.log(`${time}${t.slice(2, 8)}`);
 }
-timeConversion(t);
+timeConvert(t);
