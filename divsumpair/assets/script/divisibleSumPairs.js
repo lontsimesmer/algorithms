@@ -17,7 +17,6 @@ function divisibleSumPairs(n, k, ar) {
 }
 divisibleSumPairs(n, k, ar);
 
-
 // Example 2
 
 const arr = [1, 2, 3, 4, 5, 6],
@@ -28,8 +27,7 @@ function divideSumPair(m, d, arr) {
   let count = 0;
   for (let i = 0; i <= m - 2; i++) {
     for (let j = i + 1; j <= m - 1; j++) {
-      if ((arr[i] + arr[j]) % d == 0)
-      count++;
+      if ((arr[i] + arr[j]) % d == 0) count++;
     }
   }
   console.log(`${count}`);
