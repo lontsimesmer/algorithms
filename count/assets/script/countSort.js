@@ -29,7 +29,6 @@ countSort(arr);
 
 countingSort = (arrays) => {
   let thisArr = new Array(100).fill(0);
-  console.log(thisArr);
   for (let m = 0; m <= 100; m++) {
     for (let n = 0; n < arrays.length; n++) {
       if (m === arrays[n]) {
@@ -38,7 +37,7 @@ countingSort = (arrays) => {
     }
   }
   console.log(thisArr);
-}
+};
 countingSort([
   63, 54, 17, 78, 43, 70, 32, 97, 16, 94, 74, 18, 60, 61, 35, 83, 13, 56, 75,
   52, 70, 12, 24, 37, 17, 0, 16, 64, 34, 81, 82, 24, 69, 2, 30, 61, 83, 37, 97,
